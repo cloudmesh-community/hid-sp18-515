@@ -1,0 +1,80 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nyt/global}
+    \entry{hid-sp18-515-www-couchdb}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Web}
+      \field{note}{Accessed: 2018-02-18}
+      \field{title}{Apache CouchDB}
+      \verb{url}
+      \verb http://couchdb.apache.org/
+      \endverb
+    \endentry
+    \entry{hid-sp18-515-www-hadoop}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Web}
+      \field{note}{Accessed: 2018-02-18}
+      \field{title}{Apache Hadoop}
+      \verb{url}
+      \verb http://hadoop.apache.org/
+      \endverb
+    \endentry
+    \entry{hid-sp18-515-www-hbase}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Web}
+      \field{note}{Accessed: 2018-02-18}
+      \field{title}{Apache HBase}
+      \verb{url}
+      \verb https://hbase.apache.org/
+      \endverb
+    \endentry
+    \entry{hid-sp18-515-www-ranger}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Web}
+      \field{note}{Accessed: 2018-02-18}
+      \field{title}{Apache Ranger}
+      \verb{url}
+      \verb http://ranger.apache.org/
+      \endverb
+    \endentry
+    \entry{hid-sp18-515-www-oraclenosql}{misc}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Web}
+      \field{note}{Accessed: 2018-02-18}
+      \field{title}{Oracle Nosql Database}
+      \verb{url}
+      \verb http://www.oracle.com/technetwork/database/database-technologies/nosqldb/overview/index.html
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
