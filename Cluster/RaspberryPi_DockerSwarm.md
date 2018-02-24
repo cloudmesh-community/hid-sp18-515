@@ -1,4 +1,4 @@
-# This is a short note for deploying Raspberry Pi cluster with Docker Swarm
+# Deploying Raspberry Pi cluster with Docker Swarm
 
 >To achieve this tutorial, you will need at least two Raspberry Pi , their power supplies , as well as micro-SD card(8GB is sufficient).
 
