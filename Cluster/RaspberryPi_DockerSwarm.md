@@ -1,16 +1,16 @@
-#This is a short note for deploying Raspberry Pi cluster with Docker Swarm
+# This is a short note for deploying Raspberry Pi cluster with Docker Swarm
 
 >To achieve this tutorial, you will need at least two Raspberry Pi , their power supplies , as well as micro-SD card(8GB is sufficient).
 
 
 
-###Step 1 - Install Docker on Raspberry Pi
+### Step 1 - Install Docker on Raspberry Pi
 * connect Pi in SSH and type the following command:
 ```sh
 $ Curl -sSL https://get.docker.com | sh
 ```
 
-###Step 2 - Setting up the Raspberry Pi cluster with Docker Swarm
+### Step 2 - Setting up the Raspberry Pi cluster with Docker Swarm
 * initializing the cluster
 
 First, we start by initializing the cluster, for that we execute the command docker swarm init on the Raspberry Pi Manager.
@@ -29,7 +29,7 @@ This node joined a swarm as a worker.
 ```
 
 
-###Step 3 - Check the status of the cluster
+### Step 3 - Check the status of the cluster
 You can check the status of the cluster with the docker node ls command at any time, and run this command on the Manager machine.
 ```sh
 $ sudo docker node ls
