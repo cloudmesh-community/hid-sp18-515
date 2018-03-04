@@ -1,0 +1,41 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: "computerinfo"
+  description: "A simple service to get computerinfo using swagger -2.0 specification and codegen"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "Cloudmesh REST Service"
+  license:
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/api"
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /computer:
+    get:
+      description: "Resturns computer information of the hosting server"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "COMPUTER info"
+          schema:
+            $ref: "#/definitions/COMPUTER"
+definitions:
+  COMPUTER:
+    type: "object"
+    required:
+      - "CPU"
+    properties:
+      CPU:
+        type: "string"
+      RAM:
+        type: "string"
+      OS:
+        type: "string"
