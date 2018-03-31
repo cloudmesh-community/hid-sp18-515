@@ -1,4 +1,4 @@
-# Classification of different periods of time based on the Measurements of electric power consumption using REST service and Docker packaged service
+*# Classification of different periods of time based on the Measurements of electric power consumption using REST service and Docker packaged service
 
 >Lin, Qingyun
 
@@ -34,5 +34,5 @@ To sum up, this project is meaningful.
 * Certain machine learning algorithm will be applied 
 
 # References
-[1] https://en.wikipedia.org/wiki/Docker_(software)
-[2] https://en.wikipedia.org/wiki/Representational_state_transfer
+*[1] https://en.wikipedia.org/wiki/Docker_(software)
+*[2] https://en.wikipedia.org/wiki/Representational_state_transfer
