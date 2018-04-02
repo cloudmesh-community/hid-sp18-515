@@ -1,4 +1,4 @@
-*# Classification of different periods of time based on the Measurements of electric power consumption using REST service and Docker packaged service
+# Classification of different periods of time based on the Measurements of electric power consumption using REST service and Docker packaged service
 
 >Lin, Qingyun
 
@@ -10,6 +10,7 @@ hid-sp18-515 classification REST
 This dataset is about a sampling rate of nearly 4 years to measure the power consumption of a household.
 We want to classify this dataset into four groups to see if the electric company can give some advises or discount to consumers.
 Here, we use the dataset file household_power_consumption.txt to do this machine learning classification. The result will be displayed in REST service, and the whole project will be run in docker service.
+The data is from https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption
 
 # Introduction
 What is docker?
