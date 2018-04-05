@@ -1,8 +1,7 @@
 % status: 0
 % chapter: TBD
 
-\title{
-Classification of different periods of time based on the Measurements of electric power consumption using REST service and Docker packaged service}
+\title{Classification of different periods of time based on the Measurements of electric power consumption using REST service and Docker packaged service}
 
 
 \author{Qingyun Lin}
@@ -12,9 +11,9 @@ Classification of different periods of time based on the Measurements of electri
   \city{Bloomington} 
   \state{IN} 
   \postcode{47408}
-  \country{USA}
 }
 \email{ql10@iu.edu}
+
 
 % The default list of authors is too long for headers}
 \renewcommand{\shortauthors}{G. v. Laszewski}
@@ -33,6 +32,7 @@ This paper provides the proposal of the final project. This proposal contains th
 
 What is docker? Docker is a computer program that performs operating system level virtualization, also known as containerization. It was developed by Docker, Inc. Docker is primarily developed for Linux. It uses the Linux kernel resource isolation features (such as cgroups and kernel namespaces) and support for federated file systems (such as OverlayFS, etc.) to allow independent "containers" to run in a single Linux instance, avoiding startup. And maintain the overhead of the virtual machine (VM). The Linux kernel's support for namespaces usually isolates the application's view of the operating environment, including the process tree, network, user ID, and mounted file systems, while the kernel's cgroups provide memory and CPU resource limits. Since version 0.9, in addition to using the abstracted virtualization interface through libvirt, LXC, and systemd-nspawn, Docker also uses the libcontainer library as its own method to directly use the virtualization tools provided by the Linux kernel. Therefore, project running in docker file can be apply to other environment easly. REST is an architectural style that defines a set of constraints and attributes based on HTTP. A REST-conformant Web service or RESTful Web service provides interoperability between computer systems on the Internet. RESTful web services allow the requesting system to access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations. Therefore, deploying the project both in docker and REST, helps the project easy to transfer and the result of the project easy to be accessed. And electric consuming problem is a heated issue both for the goverments and consumers. Therefore, get more understanding of the features of electric measurement is useful for the environment. To sum up, this project is meaningful.
 
+
 \section{Design}
 
 Use REST to display the result, delploy the project in docker container.
@@ -40,18 +40,27 @@ Use python to classify the dataset into groups.
 
 \section{Scenarios}
 
-1. Download the necessary data set household_power_consumption.txt from https://archive.ics.uci.edu/ml/datasets.html
+1. Download the necessary data set household\_power\_consumption.txt\cite{editor00}.
+
 2. Clean the data to be complete to train.
+
 3. Analyze the data, and generate a suitable classification.
+
 4. Generate suitable graph to discribe the classification.
+
 5. Draw conclusion of the project.
+
 
 \section{Technology Stack}
 
 1. Python will be used to analyze and generate graph
+
 2. The result will be displayed in REST
+
 3. The project will be deployed in docker
+
 4. Certain machine learning algorithm will be applied
+
 
 \section{Conclusion}
 
@@ -64,6 +73,7 @@ REST helps the result easy to access, the docker helps the project easy to be tr
   support and suggestions to write this paper.
 
 \end{acks}
+
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report} 
