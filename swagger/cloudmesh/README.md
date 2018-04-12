@@ -63,7 +63,7 @@ chapter 34: REST Service Generation with Swagger
 
 * get all profiles
 
-        http://localhost:8080/cloudmesh/profiles
+        http://localhost:8080/cloudmesh/computer
     
 
 ## Stop The Service
