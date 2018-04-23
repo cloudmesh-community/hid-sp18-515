@@ -31,6 +31,7 @@ ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
 RUN pyenv install 3.6.2
 RUN pyenv global 3.6.2
 RUN python -m ensurepip
+RUN pip install psutil
 
 RUN git clone https://github.com/cloudmesh-community/hid-sp18-515.git
 
