@@ -22,7 +22,7 @@ Make sure you run
 
     make check
     
-which provides a conveneient way to check your latex code. Naturally you 
+which provides a convenient way to check your latex code. Naturally you 
 need to have the full version of LaTeX whcih includes chktex which 
 make check calls.
 
@@ -36,14 +36,14 @@ report.pdf:
     make
 
 Please remember that you MUST NOT commit the report.pdf file to the
-reporsitory. If we detect thsi we will remove it and do not review
+repository. If we detect this we will remove it and do not review
 your paper. This is to avoid that students submit papers that actually
 do not compile in LaTeX. Make sure you paper always compiles.
 
 This will also generate a simple check on some common issues. The 
 log file is located in 
 
-    report-latex.log
+    report.log
     
 After the compilation is over.
 
