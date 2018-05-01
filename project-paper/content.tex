@@ -249,294 +249,6 @@ industrial and organizational environments or other fields such as
 human development and aging, sports, health and media, as well as 
 legal investigations and other aspects of the law.
 
-\section{Big data}
-
-Big data is a data set. It has a large number and complexity. 
-Traditional data processing applications are not enough to cope with 
-this data. Big data challenges include capturing data, data storage, 
-data analysis, search, sharing, transmission, visualization, querying,
- updating, information privacy, and data sources. There are a lot of 
-concepts related to Big Data: There are 3 conceptual volumes, breeds,
- and speeds. Other concepts that were later triggered by big data are
- accuracy (ie, how much noise in the data) and value~\cite{editor03}.
-
-Recently, the term big data tends to refer to the use of predictive 
-analytics, user behavior analysis, or some other advanced data 
-analytics methods that extract value from data and are rarely used for
- data sets of a specific size. There is no doubt that the amount of 
-data available today is indeed large, but this is not the most 
-relevant feature of this new data ecosystem. Dataset analysis can 
-find new relevance to discover commercial trends and prevent 
-diseases, Combat crime, etc.~\cite{editor04}.  Scientists, corporate 
-executives, medicine, advertising and government practitioners often 
-encounter difficulties in large-scale data collections including Internet 
-search, financial technology, city information and business 
-information. Scientists have encountered limitations in the work of 
-electronic sciences, including meteorology, genomics, linkomics, 
-complex physics simulations, biology and environmental studies~\cite{editor05}.
-
-Datasets are growing rapidly - partly because they are increasingly 
-using portable and mass information-aware IoT devices (such as mobile
- devices, antennas (remote sensing), software logs, cameras, 
-microphones, radio frequency identification (RFID) readers) Since 
-the 1980s, the amount of information stored by the world's technology
- per capita has roughly doubled every 40 months; As of 2012, it 
-produced 2.5 exabytes per day. Data According to IDC, the global 
-data volume will increase from 4.4 zettabytes in 2013 to 2020 to 44 
-zeta. By 2025, IDC predicts 163 megabytes of data. For large 
-companies, one issue is to determine who should have big data 
-initiatives that affect the entire organization~\cite{editor03}.
-
-Relational database management systems and desktop statistics, 
-visualization of data packets is often difficult to handle big data. 
-This work may require a lot of parallel software running on dozens, 
-hundreds, even thousands of servers. What is big data depends on the 
-functionality of users and their tools, and the expansion of big data
- as a moving target. For some organizations, facing hundreds of 
-gigabytes of data for the first time may require reconsidering data 
-management options, and for other organizations, it may take tens or 
-hundreds of terabytes before data size becomes an important 
-consideration~\cite{editor03}.
-
-Data Mining Algorithms
-
-Data mining is an iterative process intended to discover patterns
-in large quantities of data. These patterns are then used to aid 
-in the answering of questions related to this data. Additionally,
-data mining is capable of assigning new meaning to data, thus 
-creating information that was not originally present or obvious. 
-While data mining does not solve problems in and of itself, it 
-does answer questions about the data. These answers can lead to 
-more data mining problems, and occasionally to a solution to the 
-original problem. Data mining is done in nine general steps. The 
-steps are: problem statement, get data, enrich data, clean data, 
-integrate data, transform data, mine, validate or interpret 
-results, and make the results actionable. These will be discussed 
-in greater depth below~\cite{editor06}.
-
-Two kinds of problems that often arise in data mining are clustering
-and classification~\cite{editor06}. Clustering involves grouping objects
-based on the similarities of their attributes. This can be useful
-for applications such as image processing or online shopping
-recommendations. On the other hand, classification is assigning
-one of a set of definite labels to an object. Clustering is
-an example of unsupervised learning, while classification is
-an example of supervised learning. Many approaches to data
-mining use a loss function to make their predictions. A loss
-function is a mapping from some event to a real number based
-on the cost of that event happening. This cost does not have
-to be strictly monetary; it could be time, lives, or infinite other
-types of costs. It is important to note that, even once data
-mining on a given project is complete, it does not definitively
-tell the data miner what the next steps are. To obtain that
-information, it is necessary to analyze the results of the data
-mining.
-
-There are ten commonly used algorithms in data mining.
-The followings are based on Top 10 algorithms in data mining~\cite{editor07}.
-These are:
-
-1. C4.5  This algorithm is a descendant of the older ID3 and CLS algorithms.
-Like these, it uses decision trees to classify data. The
-tree is grown in a divide-and-conquer manner by recursively
-partitioning the data and then assigning a leaf to a class label
-once the data cannot be partitioned or subsequent partitions
-will not aid in the prediction. This algorithm can handle either
-numeric values or nominal values, and the nature of the data
-affects how the partitioning is done. Once this is complete,
-the tree is pruned to prevent overfitting. Unfortunately, C4.5’s
-generation of rulesets is very CPU and memory intensive,
-taking 9715 seconds to analyze 100,000 samples.
-
-2. K-means  This algorithm partitions data into a given number of clusters,
-k. First, k centroids are chosen, and there are many different
-ways to pick these centroids. One commonly used approach
-is randomly sampling the data. Once this is complete, each
-data point is assigned to the nearest centroid. Obviously, there
-is no single way to decide ”nearness”; as such, the decision
-of how to compute distance is extremely important for the
-success of this algorithm. Next, the mean of every cluster
-is computed, and this mean takes the place of the centroid.
-The process is complete when the data assigned to a cluster
-no longer changes. Unfortunately, there are numerous issues
-with this algorithm. The most obvious of these is that setting
-k can be difficult, and setting k poorly will dramatically affect
-the algorithm’s performance. Additionally, it is sensitive to
-outliers.
-
-3. Support vector machines (SVM)  SVM are a robust and effective 
-approach to classification.
-SVM are best understood from the standpoint of a linearly
-separable data set. In this case, the SVM finds a hyperplane
-separating the data into two classes by maximizing the distance
-from the line to the nearest points from either class. Of
-course, data is almost never linearly separable, so part of the
-SVM formulation is handling the case where some data is on
-the wrong side of the line. Additionally, a kernel function
-can be applied when the data is not linearly separable, which
-is currently an area of active research. SVM struggled with
-with slow performance, but this is also being actively solved.
-This is done mostly by breaking the large optimization problem
-into many smaller problems.
-
-4. Apriori  This algorithm is intended to find frequent itemsets - that is
-items that occur together frequently - through generating candidates.
-First, it generates candidates for frequent itemsets of
-a certain size k+1 from the itemsets of size k. Then it calculates
-the support for each candidate to determine which of the
-candidates is an actual frequent itemset. The candidates that
-meet the minimum support are added to the frequent itemsets
-of size k+1, and the process is repeated. Unfortunately, the
-Apriori algorithm generates a large number of candidate sets
-in some cases, namely when there are many frequent itemsets
-or low minimum support. Additionally, the algorithm
-must generate many candidates for itemsets with a large size.
-For example 2100 candidates must be generated for frequent
-itemsets of size 100.
-
-5. Expectation-Maximization (EM)  The EM algorithm involves 
-fitting normal mixture models
-by maximum likelihood. This has numerous advantages, one
-of which is that it allows the algorithm to model continuous
-data well. It also allows for the modeling of latent variables,
-or variables that aren’t explicit in the dataset. The algorithm
-proceeds as one would expect: by finding expectation of the
-log likelihood function of the conditional distribution of a
-latent variable given the data and a current estimate of the
-parameters of the distribution. Then it finds the parameter that
-maximizes this value. The issue with this algorithm is that the
-number of clusters must be chosen, and there are many ways
-to accomplish that.
-
-6. PageRank  Famously developed by Larry Page and Sergey Brin and used
-by Google, PageRank ranks web pages by considering a link
-to a page as a vote for that page. Then it ranks the pages
-by how many ”votes” they get. However, the algorithm also
-considers the importance of a page doing the voting, since
-a higher-ranked page should have more clout in what pages
-it deems important. It accomplishes this task by treating the
-web as a directed graph and then counting inlinks as part of
-a vertex’s indegree and the outlinks as a vertex’s outdegree.
-The algorithm then simply iterates through the vertices until
-the ranks do not change very much.
-
-7. AdaBoost  AdaBoost is an ensemble learning system developed by Yoav
-Freund and Robert Schapire. It is extremely accurate and
-simple, with implementation possible in just ten lines of code.
-First, this algorithm uses a simple learning algorithm to generate
-class labels for the data. Then it uses the training data to
-test this learner. It repeats this process T times, and then the
-result is decided by weighted majority voting by the results of
-the weak learners. Of course, this does not handle the multiclass
-case. There is a variant of the algorithm for this case
-that splits the decisions into a series of binary classification
-problems. It is also interesting to note that this series of weak
-learner is comparable in accuracy to a strong learner.
-
-8. K-nearest neighbors  This algorithm involves finding k items 
-in the data set that
-are closest to a given object. Like k-means, this ”closeness”
-is not defined, so it is necessary to choose a distance metric
-carefully. For an unlabeled object, the object’s k nearest
-neighbors are calculated, then those neighbors’ class labels
-vote on the class of the object. One issue with this algorithm
-is that it is very sensitive to the choice of k. Also, the majority
-vote is not always a good way to decide the class of an object,
-since some neighbors may be vastly closer than others. To
-solve this, a distance-weighted voting system can be used.
-K-nearest neighbors is well-suited for data in which an object
-can have multiple labels.
-
-9. Naive Bayes  Naive Bayes is a commonly used algorithm that, while usually
-outperformed by more complex algorithms, can be relied
-upon to provide good results in a wide variety of problems.
-Naive Bayes simply calculates the conditional probability of
-the features given the label and chooses the label with the
-maximum probability. However, this means that the data must
-be discretized in some way to ensure that the probability can
-be computed. Additionally, this algorithm assumes that the
-features are all independent. They rarely are independent, but
-this does not make the algorithm perform poorly in practice.
-
-10. CART  CART, standing for Classification and Regression Trees, was
-developed by Leo Breiman, Jerome Friedman, Richard Olshen,
-and Charles Stone. The algorithm builds a tree to maximal
-size and then prunes it back recursively based on which
-subtree contributes the least to the accuracy of the classification.
-This accuracy is determined based on external test data or
-cross validation. CART also supports class balancing, which
-is an endeavor to make sure the pruning does not unfairly
-take more occurrences of one class away. The importance of
-an attribute is calculated by the sum of the improvement in
-performance in all nodes where the attribute is split upon.
-
-Big Data Technology
-
-1. REST Representational State Transfer
-REpresentational State Transfer (REST) is an architectural style 
-that defines a set of constraints and attributes based on HTTP. 
-Web services that conform to REST-style or REST-style Web 
-services provide interoperability between computer systems on the 
-Internet. RESTful web services allow the requesting system to 
-access and manipulate the textual representation of web resources 
-by using a uniform and predefined set of stateless operations. 
-Other types of web services (such as SOAP web services) expose 
-their own set of arbitrary operations~\cite{editor08}.
-
-The web resource is first defined on the World Wide Web as a 
-document or file specified by its URL. However, today they have a 
-more general and abstract definition, including anything that can 
-be identified, named, processed, or processed in any way on the 
-Internet. In a RESTful web service, a request for a resource URI 
-triggers a response that may be in XML, HTML, JSON, or other 
-format. The response can confirm that some changes have been made 
-to the stored resources, and the response can provide hypertext 
-links to other related resources or collections of resources. 
-When using HTTP, the most common operations are GET, POST, PUT, 
-DELETE, and other predefined CRUD HTTP methods~\cite{editor08}.
-
-By using stateless protocols and standard operations, REST 
-systems are designed to achieve fast performance, reliability, 
-and growth capabilities, even at runtime, by reusing manageable 
-and updated components without affecting the entire system~\cite{editor08}.
-
-The transformation of representative countries was introduced and 
-defined in Roy Fielding's doctoral dissertation in 2000. 
-Fielding's paper explains the REST principles known as the HTTP 
-Object Model since 1994 and is used to design the HTTP 1.1 and 
-Uniform Resource Identifier (URI) standards. The term is intended 
-to evoke a behavioral image of a well-designed web application: it
- is a web resource network (virtual state machine) where the user 
-selects the link (eg / user / tom) in the application The progress
- of the program, as well as operations such as GET or DELETE 
-(state transitions), cause the next resource (indicating the next 
-state of the application) to be passed to the user for its use~\cite{editor08}.
-
-2. Swagger
-Swagger is an open source software framework powered by a large 
-ecosystem of tools that helps developers design, build, document, 
-and use RESTful Web services. Although most users recognize Swagger
- through the Swagger UI tool, the Swagger toolset includes support
- for automatic documentation, code generation, and test case 
-generation~\cite{editor09}.
-
-3. Docker
-Docker is a computer program that performs operating system level 
-virtualization, also known as containerization. It was developed by
- Docker, Inc. Docker is primarily developed for Linux. It uses 
-Linux kernel resource isolation features (such as cgroups and 
-kernel namespaces) and support for federated file systems (such as
- OverlayFS, etc.) to allow independent containers to run in a 
-single Linux instance, thus avoiding startup. And keep the overhead
- of the virtual machine (VM). The Linux kernel's support for 
-namespaces often isolates the application's view of the operating 
-environment, including the process tree, network, user IDs, and 
-mounted file systems, while the kernel's cgroups provide memory and
- CPU resource limits. Beginning with version 0.9, Docker uses the 
-libcontainer library as its own way to directly use the 
-virtualization tools provided by the Linux kernel, in addition to 
-using libvirt, LXC, and systemd-nspawn to use the abstract 
-virtualization interface~\cite{editor10}.
 
 \section{Certain Data Exploration methods useful in Psychological Research}
 
@@ -692,9 +404,10 @@ sciences and ethical standards training on human subject research.
 The following of this section will describe the steps of applying 
 big data technique in psychology, most of the codes are written by R.
 
-Data Sets of Digital Footprints
+\subsection{Data Sets of Digital Footprints}
 
-This section focuses on how to import, store and preprocess large 
+This subsection focuses on how to import, store and preprocess 
+large 
 samples of digital footprints. Many large data sets can be obtained
  online for free, or can be obtained from companies and 
 institutions that collect and store them. In a popular example, 
@@ -707,8 +420,8 @@ journal articles are now often accompanied by publicly available
 data sets. A recent article by Eichstaedt et al. (2015), 
 supplemented by data sets aggregated at the county level by U.S. 
 users.3 In addition, many online platforms (such as Twitter) 
-contain large amounts of publicly available data that can be easily 
-recorded. Peer website provides a collection links to other 
+contain large amounts of publicly available data that can be easily
+ recorded. Peer website provides a collection links to other 
 potentially interesting data sets. The following hands-on section 
 describes the sample data set used in this tutorial. The sample 
 data set was obtained from the myPersonality.org database.
@@ -775,7 +488,7 @@ colnames(M) <- likes$name
 dim(M)
 \end{verbatim}
 
-Trimming the User–Footprint Matrix
+\subsection{Trimming the User–Footprint Matrix}
 
 There is no single or simple, correct way to select the lowest 
 frequency, below which frequency a given user or step should be 
@@ -793,7 +506,7 @@ memory. This not only tells you how much data you need to keep,
 but also speeds up writing code by reducing the time required for 
 testing.
 
-Hands-On: Trimming the User–Like Matrix
+\subsection{Hands-On: Trimming the User–Like Matrix}
 
 \begin{verbatim}
 repeat {
@@ -817,7 +530,24 @@ users <- users[match(rownames(M),
 users$userid),]
 \end{verbatim}
 
-Extracting Patterns from Big Data Sets
+\subsection{Extracting Patterns from Big Data Sets}
+
+This subsection focuses on two approaches that represent two large 
+families, extracting patterns from the user's footprint matrix: 
+(a) Singular value decomposition, which represents a method based 
+on feature decomposition, projecting a set of data points into a 
+set of dimensions; and ( b) The potential Dirichlet distribution 
+represents a cluster analysis method. The main advantages of LDA 
+and other cluster analysis methods are easy to explain. However, 
+they are generally computationally expensive and can only handle 
+non-negative data. (Fortunately, in the context of digital 
+footprints, there is very little negative data.) The main 
+advantages of the singular value decomposition based on internal 
+decomposition and many other methods are its simplicity and speed 
+of calculation. Therefore, they are often used to develop 
+predictive models. Compared with LDA, the method based on 
+intrinsic decomposition can also be applied to data sets containing
+ negative data points.
 
 Reducing the dimensionality of the data (or extracting the cluster)
  has many advantages. First, in the case of large data sets, there
@@ -834,7 +564,7 @@ interpret than hundreds or thousands of individual variables.
 Finally, reducing the dimensions reduces the computational time and
  memory required for further analysis.
 
-Selecting the Number of Dimensions or Clusters to Extract
+\subsection{Selecting the Number of Dimensions or Clusters to Extract}
 
 One of the main considerations for reducing the data dimension is 
 to select the correct number of dimensions or clusters (in k) to be
@@ -850,9 +580,23 @@ earlier are lost, and the prediction accuracy may be reduced. The
 following sections discuss SVD and LDA in more detail and introduce
  some simple ways to choose the correct value for k.
 
-Singular Value Decomposition
+\subsection{Singular Value Decomposition}
 
-VD denotes a given matrix of the products of three matrices (m rows
+SVD is a popular dimensionality reduction technique that is widely
+ used in various environments, including computational social 
+sciences, machine learning, signal processing, natural language 
+processing, and computer vision. Social scientists are usually more
+ familiar with similar methods: Principal Component Analysis (PCA).
+ In fact, PCA can be considered as a special case of SVD: SVD is 
+performed on the centered matrix to generate V and $\sum$, 
+which is equivalent
+ to the feature vector and square root of the feature values 
+generated by PCA. Unfortunately, PCA needs to multiply the matrix 
+by its transpose, which is computationally inefficient for large 
+matrices.
+
+SVD denotes a given matrix of the products of three matrices 
+(m rows
  and n columns): The matrix U (with size mk) containing the left 
 singular vector contains a non-negative square diagonal matrix 
 (size k); the matrix V (size nk) contains The correct singular 
@@ -860,7 +604,8 @@ vector, where k is the dimension that the researcher chooses to
 extract. For simplicity, we refer to the left and right singular 
 values as SVD dimensions.
 
-Centering the data
+\subsection{Centering the data}
+
 Before performing SVD to improve the interpretability of the SVD 
 dimension, the data is usually centered (ie, the entries in the 
 matrix are reduced column by column). This is because the first SVD
@@ -869,14 +614,16 @@ the frequency of objects in rows and columns.11 Since the remaining
  dimensions must be orthogonal to the first dimension dimension, 
 the resulting SVD dimension may not be well represented data.
 
-Rotation
+\subsection{Rotation}
+
 The SVD aims to maximize the variance considered by the first and 
 subsequent orthogonal dimensions. Therefore, early SVD dimensions 
 are highly relevant to many users and footprints. In addition, many
  users and footprints are related to many SVD dimensions, making 
 SVD results difficult to interpret.
 
-Computing SVD
+\subsection{Computing SVD}
+
 Most programming languages provide ready-made packages for 
 calculating SVD: the svd function of Python's SciPy library, the 
 feature library in C, the PROPACK library in Matlab, and the 
@@ -886,7 +633,8 @@ above packages. You can use the various functions available in R
 (for example, varimax or promax), Matlab, and other languages for 
 factor rotation.
 
-Latent Dirichlet Allocation
+\subsection{Latent Dirichlet Allocation}
+
 LDA assumes that each user and each footstep in the matrix (in the
  case of LDA, the user is referred to as a document, and the 
 footprint as a word) belongs to a group of k clusters (known as 
@@ -896,7 +644,8 @@ probability that each user belongs to each cluster, and a matrix of
  size kn that describes the probability that each cluster belongs 
 to each cluster. 
 
-Selecting the k
+\subsection{Selecting the k}
+
 As with other methods, there is no single or simple way to select 
 the correct number k of LDA clusters to extract. Common methods use
  the log-likelihood estimate of the model and can plot the number k
@@ -910,13 +659,14 @@ k-values generally provide better predictive power. Alternatively,
  the interpretability of the topic may be supported by applying a 
 hierarchical LDA.
 
-Computing LDA
+\subsection{Computing LDA}
+
 Most programming languages provide ready-made LDA implementations: Rs 
 theme model package, Pythons scikit-learn package, 
 GibbsLDA++ for C++, and theme modeling toolbox for Matlab.
 
-Hands-On: Reducing the Dimensionality of the
-User–Like Matrix Using SVD and LDA
+\subsection{Hands-On: Reducing the Dimensionality of the
+User–Like Matrix Using SVD and LDA}
 
 \begin{verbatim}
 set.seed(seed = 68)
@@ -961,7 +711,20 @@ lg[[i]] <- logLik(Mlda)
 plot(2:5, unlist(lg))
 \end{verbatim}
 
-Interpreting Dimensions and Clusters
+\subsection{Interpreting Dimensions and Clusters}
+
+This section focuses on the dimensions and clustering extracted 
+from the user's footprint matrix. This explanation is certainly not
+ trivial, but it may provide important insights. Several major 
+psychological models and theories are derived from different 
+analyses than those provided in this paper. For example, the 
+lexical assumption assumes that important interpersonal 
+psychological differences become part of the language. This theory
+ is an important foundation for many personality psychology and was
+ used to develop major personality frameworks such as HEXACO or Big
+ Five. Expected interpersonal psychological differences and other 
+psychological phenomena can also reflect the reasonable digital 
+footprint in the model.
 
 Several strategies can be used to explain the nature of patterns 
 extracted from large data sets. First, you can explore the 
@@ -977,7 +740,7 @@ explore the interpretation of dimensions or clusters by exploring
 them a hierarchy that spans different k levels. The equivalent of 
 LDA is provided by graded LDA.
 
-Hands-On: Interpreting Clusters and Dimensions
+\subsection{Hands-On: Interpreting Clusters and Dimensions}
 
 \begin{verbatim}
 cor(gamma, users[,-1], use = 'pairwise')
@@ -1010,7 +773,7 @@ top[[i]] <- colnames(M)[temp]
 top
 \end{verbatim}
 
-SVD dimensions
+\subsection{SVD dimensions}
 
 A similar approach can be used in the SVD dimension. Use the 
 following code to obtain the correlation between the maximum 
@@ -1049,7 +812,7 @@ colnames(M)[tail(f, n = 10)]
 colnames(M)[head(f, n = 10)]
 \end{verbatim}
 
-Predicting Real-Life Outcomes
+\subsection{Predicting Real-Life Outcomes}
 
 This part focuses on building a prediction model based on 
 dimensions and clusters extracted from the user's footprint matrix.
@@ -1069,7 +832,7 @@ promote the reproducibility of results. In this work, we use linear
  and logistic regression, which is well known to most social 
 scientists.
 
-Cross-Validation
+\subsection{Cross-Validation}
 
 To reduce the variability of results, multiple rounds of 
 cross-validation are often performed using different data 
@@ -1086,8 +849,8 @@ well-specified libraries. Popular R libraries that support
 cross-validation include boot and caret. For Python users, we 
 recommend using the cross-validation module in scikit-learn.
 
-Hands-On: Predicting Real-Life Outcomes With
-Facebook Likes
+\subsection{Hands-On: Predicting Real-Life Outcomes With
+Facebook Likes}
 
 The following code generates a vector collapse with a length equal
  to the number of users, consisting of randomly selected numbers 
@@ -1189,16 +952,16 @@ rs[[as.character(i)]] <- cor(users$ope
 }
 \end{verbatim}
 
-Finally, we calculate the open cross-validation forecast for the 
-entire sample. To do this, we build a model and use the data 10 
-times to calculate the predicted value. First, we create a vector 
+Finally, the open cross-validation was calculated forecast for the 
+entire sample. To do this,  a model was build and used the data 10 
+times to calculate the predicted value. First, a vector was created
 predo to store the prediction of the entire sample. It is full of 
 missing values (NA) and has as many elements as the number of 
 users. Next, we use the for loop to re-run the previously described
  code while selecting a continuous cross-validation fold. Each 
 time, the predicted openness value is saved as an element of the 
-predo vector. After the loop is completed, we calculate the 
-correlation between the actual open score and the predicted open 
+predo vector. After the loop is completed, the correlation was 
+caculated between the actual open score and the predicted open 
 score for all users in the sample:
 
 \begin{verbatim}
