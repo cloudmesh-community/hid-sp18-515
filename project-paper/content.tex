@@ -1023,24 +1023,29 @@ braces, and change the value of i to a continuation element stored
 previously, but only the first of the k = 50 SVD dimensions (Msvd 
  v [,1:i]) is used. The result is stored as a new element in the 
 list rs (rs [[as.character (k)]]). We fix R's random number generator
- again to ensure that our results match the reader's results:
+ again to ensure that our results match the reader's results as shown
+ in Figure \ref{F:bla}:
 
+
+\begin{figure}[htb]
+\begin{footnotesize}
 \begin{verbatim}
-set.seed(seed = 68)
-ks<-c(2:10,15,20,30,40,50)
-rs <- list()
-for (i in ks){
-v_rot <- unclass(varimax(Msvd$v[,
-1:i])$loadings)
-u_rot <- as.data.frame(as.matrix(M%*%
-v_rot))
-fit_o <- glm(users$ope, data = u_rot,
-subset = !test)
-pred_o <- predict(fit_o, u_rot[test,])
-rs[[as.character(i)]] <- cor(users$ope
-[test], pred_o)
-}
+    set.seed(seed = 68)
+    ks<-c(2:10,15,20,30,40,50)
+    rs <- list()
+    for (i in ks){
+        v_rot <- unclass(varimax(Msvd$v[,1:i])$loadings)
+        u_rot <- as.data.frame(as.matrix(M%*%v_rot))
+        fit_o <- glm(users$ope, data = u_rot, subset = !test)
+        pred_o <- predict(fit_o, u_rot[test,])
+        rs[[as.character(i)]] <- cor(users$ope[test], pred_o)
+    }
 \end{verbatim}
+\end{footnotesize}
+\caption{Bla Bla Bl. Copied from~\cite{editor12}}\label{F:bla}
+\end{figure}
+
+
 
 This code is quoted from~\cite{editor12}
 
